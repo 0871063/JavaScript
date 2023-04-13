@@ -13,21 +13,25 @@
         <link rel="stylesheet" href="">
         <script src="script/function.js"></script>
         <style>
-        div {
-    text-align: left;
-  }
+  .dice_wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
         </style>
     </head>
     <body>
         <div>
-            <div>
-            <p>Player 1 
-            <img id="dice1" src="images/dice1.png" alt="Dice One"> </p>
-        </div>
-        <div>
-            <p>Player 2   
-            <img id="dice2" src="images/dice1.png" alt="Dice Two"></p>
-        </div>
+            <div class="dice_wrapper">
+                <div class="dice_block">
+                    <p>Player 1 </p>
+                    <img id="dice1" src="images/dice1.png" alt="Dice One">
+                </div>
+                <div class="dice_block">
+                    <p>Player 2  </p>
+                    <img id="dice2" src="images/dice1.png" alt="Dice Two">
+                </div>
+            </div>
 <script>
             var player1Score = 0;
             var player2Score = 0;
