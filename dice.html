@@ -11,17 +11,31 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
+        <script src="script/function.js"></script>
+        <style>
+        div {
+    text-align: left;
+  }
+        </style>
     </head>
     <body>
         <div>
-            <p>Player 1</p>
-            <p>Player 2</p>
-            <img id="dice1" src="images/dice1.png">
-            <img id="dice2" src="images/dice2.png">
+            <div>
+            <p>Player 1 
+            <img id="dice1" src="images/dice1.png" alt="Dice One"> </p>
+        </div>
+        <div>
+            <p>Player 2   
+            <img id="dice2" src="images/dice1.png" alt="Dice Two"></p>
+        </div>
+<script>
+            var player1Score = 0;
+            var player2Score = 0;
+</script>
 
-            <button id="btnRoll" onclick="rollDice()">Roll </button>
-            <p>Player 1 Score :</p> <label id="player1Score">0</label>
-            <p>Player 2 Score :</p><label id="player2Score">0</label>
+            <p><button id="btnRoll" onclick="rollDice()">Roll </button></p>
+            <p>Player 1 Score : <label id="player1Score">0</label></p> 
+            <p>Player 2 Score :<label id="player2Score">0</label></p>
         </div>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
